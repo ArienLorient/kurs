@@ -1,0 +1,82 @@
+*/DEGISKENLER\*
+
+baslik = "İlginizi Çekebilir" #string veri tipidir.
+vade = 48 #int veri tipidir.
+faizOrani = 1.79 #float veri tipidir.
+
+print(baslik)
+print(vade)
+print(faizOrani)
+
+print(type(baslik))
+print(type(vade))
+print(type(faizOrani))
+
+*/SART BLOGU\*
+
+dolarDun = 7.25
+dolarBugun = 7.45
+
+#syntax şart bloklarıdır. Uygulamayı dallanıp budaklandırmak için kullanılır ve ekranda ne göstereceğime karar veriyorum.
+#indentation: Belli bir boşluk bırakmak demektir.
+#true/false 
+
+if dolarDun>dolarBugun :
+  print("Azalış Oku")
+elif dolarDun<dolarBugun :
+  print("Artış Oku")
+elif dolarDun==dolarBugun :
+  print("değişim olmadı")
+
+# AYNI ŞEKİLDE YAZILMIŞ HALİ #
+
+dolarDun = 7.45
+dolarBugun = 7.45
+
+if dolarDun>dolarBugun:
+  print("Azalış Oku")
+elif dolarDun<dolarBugun:
+  print("Artış Oku")
+else:
+  print("sabit")
+
+*/DONGU\*
+
+kredi1 = 'Hızlı Kredi'
+kredi2 = 'Maaşını Halkbanktan Alan'
+kredi3 = 'Mutlu emekli'
+kredi4 = "Özel Sektör"
+
+print(kredi1)
+print(kredi2)
+print(kredi3)
+print(kredi4)
+
+#liste, normalde buraya yazdığımız şeyleri verikayanağından çekecek. Tek tek print yazmaktansa bu förmülle işimizi hallederiz.
+krediler = ["Hızlı Kredi","Maaşını Halkbanktan Alan","Mutlu emekli","Özel Sektör"]
+
+#altta ki ifade; kredilerde bulunan her bir veri için dön demek. "kredi" değişkenini tanımlıyoruz.
+for kredi in krediler :
+  print(kredi)
+
+#defle başlıyorsa içerisinde tekrarlanmasını istediğimiz kodları yerleştiririz.
+def kredilerilistele():
+  krediler = ["Hızlı Kredi","Maaşını Halkbanktan Alan","Mutlu emekli","Özel Sektör"]
+  for kredi in krediler :
+    print(kredi)
+
+
+kredilerilistele()
+
+# 07.09.2021 DERS TEKRARI NOTLARIM #
+
+kredi1 = "Hızlı Kredi"
+kredi2 = "Maaşını Halkbanktan Alan"
+kredi3 = "Mutlu emekli"
+kredi4 = "Kamu Çalışanı"
+kredi5 = "Gayrimenkul İşyeri"
+kredi6 = "Gayrimenkul Özel"
+kredi7 = "Gayrimenkul Arsa"
+
+krediler = ["Hızlı Kredi","Maaşını Halkbanktan Alan","Mutlu emekli","Kamu Çalışanı","Gayrimenkul İşyeri","Gayrimenkul Özel","Gayrimenkul Arsa"]
+# for x in krediler: döngüdür bu kredilerde 7 defa döner ve hepsini alt alta sıralar.
