@@ -35,7 +35,7 @@ namespace KampIntro
             }
 
             //bool kavramını 3 farklı durum olan olaylarda da kullanırız.
-            double dolarDun = 7.85;
+            double dolarDun = 7.88;
             double dolarBugun = 7.65;
 
             if (dolarDun>dolarBugun) 
