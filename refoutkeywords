@@ -1,0 +1,44 @@
+namespace Methods
+{
+  class Program
+    {
+      static void Main(string[])
+      {
+        int number1 = 20;
+        int number2 = 100;
+        var result = Add(number1, number2)
+        
+        Console.WriteLine(result);  //Bu işlemin sonucu 130'dur çünkü "result" içinde belirtilen number1'ı kendi metodunun içerisinde 30 olarak güncelledik.
+        Console.WriteLine(number1); //Bu çıktının cevabı ise 20'dir. Herhangi bir güncellemeyle alakası yoktur. 7. satırda yazan kodu okur.
+        Console.ReadLine();
+      }
+      
+      static int Add(int number1, int number2)
+      {
+        number1 = 30
+        return number1 + number2;
+      }
+      
+      //10. satırda olduğu gibi 7. satırda bulunan number1 değerininde 30 değerini alması istiyorsak "ref" keywordü ile hem metodumuza hemde 9. satırda bulunan kod bloğumuzun içine eklemem
+      z gerekir. Bu işlem ile number1 için tnaımlanmış 2 farklı değer yerine ref ile number1'in referansını kullan demiş oluyoruz.
+      //Ref ile değer tiplerin referans tip olarak kullanılmasını sağlarız.
+      
+      //int number1 = 20;
+      //int number2 = 100;
+      //var result = Add(ref number1, number2)  //9. satır "ref" eklenmiş hali
+      //static int Add(ref int number1, int number2)  //15. satır "ref" eklenmiş hali
+      
+      //OUT keywordü REF ile mantık olarak aynıdır. Değer tipi referans tip olarak göndermemizi sağlar. Farkı ise 7. satırda number1 değerine bir değer vermemiz gibi bir zorunluluğumuz kalmıyor.
+      
+      //int number1;
+      //int number2 = 100;
+      //var result = Add(out number1, number2)  //9. satır "out" eklenmiş hali.
+      //static int Add(out int number1, int number2)  //15. satır "out" eklenmiş hali.
+      //{
+        //number1 = 30
+        //return number1 + number2;
+      //}
+      
+      //out olarak gönderdiğimiz değeri mutlaka out'u gönderdiğimiz metod içerisinde yani 16. satırda yaptığımız metod içerisinde bir kere set etmemiz gerekmektedir.
+    }
+}
