@@ -9,7 +9,12 @@ namespace GenericsIntro
             MyList<string> names = new MyList<string>();
             names.Add("Yasin");
 
+            Console.WriteLine(names.Length);
 
+            foreach (var name in names.Items)
+            {
+                Console.WriteLine(name);
+            }
         }
     }
 }
