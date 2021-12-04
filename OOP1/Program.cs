@@ -22,8 +22,6 @@ namespace OOP1
             productManager.Add(product1);
             Console.WriteLine(product1.ProductName);
 
-            productManager.Topla2(3, 6);
-
             //int, double, bool... gibi sayısal veriler değer tip.
             //diziler, class, abstract class, interface... bunlar ise referans tip değerlerdir.
         }
